@@ -23,3 +23,14 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
+function isPalindrome(string) {
+  let arrayString = string.split('')
+  let reverseArray = arrayString.reverse()
+  let reverseString = reverseArray.join('')
+
+  if (string === reverseString){
+    return true
+  } else {return false}
+}
